@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import AudioVisual from 'vue-audio-visual'
+
+Vue.use(AudioVisual)
 
 Vue.config.productionTip = false
 
