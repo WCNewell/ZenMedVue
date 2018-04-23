@@ -7,14 +7,30 @@
       <button type="button" class="btn btn-outline-info">Info</button>
       <button type="button" class="btn btn-outline-warning">Warning</button>
       <button type="button" class="btn btn-outline-danger">Danger</button> -->
-      <div class="form-group">
-      <button class="btn btn-outline-primary" @click.prevent="playSound('/static/Cicada-SoundBible.com-99344226.mp3')">Cicadas</button>
-    <br>
-    <label>
-      <button class="btn btn-outline-secondary" @click.prevent="playSound('http://soundbible.com/mp3/Elevator Ding-SoundBible.com-685385892.mp3')"><span class="fa fa-play-circle-o"></span></button>
-      Play Elevator Ding
-    </label>
-  </div>
+      <div>
+        <button v-on:click='play' type='button' class='btn btn-outline-primary'>Cicadas</button>
+        <audio ref='audioElement1' src='/static/Cicada-SoundBible.com-99344226.mp3'></audio>
+      </div>
+      <div>
+        <button v-on:click='play' type='button' class='btn btn-outline-secondary'>Crickets</button>
+        <audio ref='audioElement' src='/static/Summer Crickets Chirping-SoundBible.com-1519333525.mp3'></audio>
+      </div>
+      <div>
+        <button v-on:click='play' type='button' class='btn btn-outline-success'>Cicadas</button>
+        <audio ref='audioElement' src='/static/Cicada-SoundBible.com-99344226.mp3'></audio>
+      </div>
+      <div>
+        <button v-on:click='play' type='button' class='btn btn-outline-info'>Cicadas</button>
+        <audio ref='audioElement' src='/static/Cicada-SoundBible.com-99344226.mp3'></audio>
+      </div>
+      <div>
+        <button v-on:click='play' type='button' class='btn btn-outline-warning'>Cicadas</button>
+        <audio ref='audioElement' src='/static/Cicada-SoundBible.com-99344226.mp3'></audio>
+      </div>
+      <div>
+        <button v-on:click='play' type='button' class='btn btn-outline-danger'>Cicadas</button>
+        <audio ref='audioElement' src='/static/Cicada-SoundBible.com-99344226.mp3'></audio>
+      </div> 
   </div>
 </template>
 
@@ -27,15 +43,16 @@
         }
       },
       methods: {
-        playSound (sound) {
-          if(sound) {
-          var audio = new Audio(sound);
-          audio.play();
-          }
+        play: function(event) {
+          const audio = this.$refs.audioElement1
+            if (audio.paused) {
+            audio.play()
+            } else {
+            audio.pause()
         }
       }
+    }
   }
-  
 </script>
 
 <style scoped>
