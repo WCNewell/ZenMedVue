@@ -4,18 +4,25 @@
       <av-line
       :line-width="2"
       line-color="#7BD9BD"
-      audio-src="https://open.spotify.com/track/1LYipMFKz8X6fNU7RJvvVW"
+      audio-src='/static/sumo_blanco_Atmosphere_event_horizon_12.mp3'
       ></av-line>
-      <!-- https://open.spotify.com/track/1LYipMFKz8X6fNU7RJvvVW -->
+      <!-- <audio-player :sources='audioSources' :loop='true'></audio-player> -->
     </div>
 </template>
 
 <script>
+import AudioPlayer from './audio-player.vue'
   export default {
+    components: {
+      AudioPlayer
+    },
     name: 'ZenMusic',
       data () {
         return {
-          msg: 'Meditate with Music'
+          msg: 'Meditate with Music',
+          audioSources: [
+            '/static/Arty-LastKiss.m4p'
+          ]
           }
       }
   }
