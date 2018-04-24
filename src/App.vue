@@ -1,17 +1,17 @@
 <template>
+
   <div id="app">
+
     <img src="./assets/zen-garden1.jpg">
       <h1>Welcome to Zen Garden</h1>
-        <router-link to="/ZenMusic">
-          <button type="button" class="btn btn-primary">Music</button>
-        </router-link>
-        <router-link to="/NoMusic">
-          <button type="button" class="btn btn-warning">Silence</button>
-        </router-link>
-        <router-link to="/ZenBoard">
-          <button type="button" class="btn btn-danger">Zenboard</button>
-        </router-link>
+        <div id='nav-buttons'>
+        <router-link to="/" class="btn btn-info">Home</router-link>
+        <router-link to="/ZenMusic" class="btn btn-primary">Music</router-link>
+        <router-link to="/NoMusic" class="btn btn-warning">Silence</router-link>
+        <router-link to="/ZenBoard" class="btn btn-danger">Zenboard</router-link>
+</div>
     <router-view/>
+    
   </div>
 </template>
 
@@ -38,7 +38,7 @@ img {
   height: 300px;
   width: auto;
 }
-button {
-  margin: 1rem;
+#nav-buttons {
+  padding: .75rem;
 }
 </style>
