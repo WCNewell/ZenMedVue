@@ -66,7 +66,6 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  /* align-content: space-between; */
 }
 #sound-button {
   padding: .75rem;
