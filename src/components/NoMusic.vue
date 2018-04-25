@@ -9,7 +9,7 @@
     name: 'NoMusic',
       data () {
         return {
-          msg: 'Meditate in Silence'
+          msg: 'Meditate in ZenSilence'
             }
         }
     }

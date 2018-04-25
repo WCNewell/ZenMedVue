@@ -16,7 +16,7 @@
     name: 'ZenMusic',
       data () {
         return {
-          msg: 'Meditate with Music'
+          msg: 'Meditate with ZenMusic'
           }
       }
   }

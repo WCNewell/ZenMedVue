@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/zen-garden1.jpg">
-      <h1>Welcome to Zen Garden</h1>
+      <h1>ZenMed</h1>
       <div>
         <router-link button to="/" style='margin: 2rem' class="btn btn-info">Home</router-link>
         <router-link to="/ZenMusic" style='margin: 2rem' class="btn btn-primary">Music</router-link> 
