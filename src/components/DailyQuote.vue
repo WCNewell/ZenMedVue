@@ -33,6 +33,7 @@
 
 <style scoped>
 #quote-style {
+    color: white;
     display: flex;
     justify-content: center;
 }

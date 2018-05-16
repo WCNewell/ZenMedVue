@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/zen-garden1.jpg">
+    <!-- <img src="./assets/Buddha1.jpg"> -->
       <h1>ZenMed</h1>
       <div>
         <router-link button to="/" style='margin: 2rem' class="btn btn-info">Home</router-link>
@@ -20,15 +20,26 @@ export default {
 </script>
 
 <style>
+body {
+    background-image: url('./assets/BuddhaClose.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+
 #app {
+  color: white;
   text-align: center;
   margin-top: 60px;
 }
 h1 {
+  color: white;
   margin: 2rem;
 }
-img {
+/* img {
   height: 300px;
   width: auto;
-}
+} */
 </style>
