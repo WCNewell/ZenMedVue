@@ -5,8 +5,8 @@
       <div>
         <router-link button to="/" style='margin: 2rem' class="btn btn-info">Home</router-link>
         <router-link to="/ZenMusic" style='margin: 2rem' class="btn btn-primary">Music</router-link> 
-        <router-link to="/NoMusic" style='margin: 2rem' class="btn btn-warning">Silence</router-link>
-        <router-link to="/ZenBoard" style='margin: 2rem' class="btn btn-danger">Zenboard</router-link>
+        <router-link to="/DailyQuote" style='margin: 2rem' class="btn btn-warning">DailyQuote</router-link>
+        <router-link to="/ZenBoard" style='margin: 2rem' class="btn btn-danger">ZenBoard</router-link>
       </div>
     <router-view/>
   </div>
