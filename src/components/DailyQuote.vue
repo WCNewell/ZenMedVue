@@ -36,5 +36,6 @@
     color: white;
     display: flex;
     justify-content: center;
+    padding: 2em;
 }
 </style>

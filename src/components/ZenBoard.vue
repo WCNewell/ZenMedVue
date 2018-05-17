@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Meditate with Zenboard</h1>
+    <h1>Meditate with ZenBoard</h1>
     <span class='soundboard'>
       <div id='sound-button' v-for='(sound, index) in sounds' :key='index'>
         <button @click='play(sound.audio)' type='button' class='btn btn-outline-primary'>{{ sound.name }}</button>
