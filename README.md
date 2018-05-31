@@ -1,21 +1,13 @@
-# technical-talk
+# ZenMed
 
 > A Vue.js project
 
-## Build Setup
+ZenMed is a meditation app built in Vue.js. This first iteration includes an audio player with visualizer, daily inspirational quote from Quotes.rest API and a board of white noise generating buttons.
 
-``` bash
-# install dependencies
-npm install
+This project began as a React Native app but did not get sufficient audio functionality working in time for the capstone presentation. I have since been advised that React Native may not be the best framework for this type of app so I will do some more research on that before continuing in RN, Vue.js or another.
 
-# serve with hot reload at localhost:8080
-npm run dev
+Future iterations would include an API for more meditative music, more content regarding meditation advice, looping for the sound board buttons, sound board compression and equalization, and some original music created by myself!
 
-# build for production with minification
-npm run build
+## Deployed url
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> https://zenmedvue.firebaseapp.com/#/
