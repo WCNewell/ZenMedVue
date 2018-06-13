@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/Buddha1.jpg"> -->
       <h1>ZenMed</h1>
       <div>
         <router-link button to="/" style='margin: 2rem' class="btn btn-info">Home</router-link>
